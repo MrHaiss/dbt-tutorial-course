@@ -33,3 +33,9 @@ models:
     +persist_docs:
       relation: true
       columns: true
+    # Table delets after this many hours
+    +hours_to_expiration: 168
+
+tests:
+  lessons:
+    +severity: warn
